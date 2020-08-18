@@ -1,0 +1,13 @@
+{
+  "main.css": "@yield('content-viewer-url')/static/css/main.2dc4b766.chunk.css",
+  "main.js": "@yield('content-viewer-url')/static/js/main.fbb67a98.chunk.js",
+  "main.js.map": "@yield('content-viewer-url')/static/js/main.fbb67a98.chunk.js.map",
+  "runtime~main.js": "@yield('content-viewer-url')/static/js/runtime~main.820278cc.js",
+  "runtime~main.js.map": "@yield('content-viewer-url')/static/js/runtime~main.820278cc.js.map",
+  "static/js/2.2f9c994e.chunk.js": "@yield('content-viewer-url')/static/js/2.2f9c994e.chunk.js",
+  "static/js/2.2f9c994e.chunk.js.map": "@yield('content-viewer-url')/static/js/2.2f9c994e.chunk.js.map",
+  "index.html": "@yield('content-viewer-url')/index.html",
+  "precache-manifest.5ada55d27beeb791c5f1b69feb418377.js": "@yield('content-viewer-url')/precache-manifest.5ada55d27beeb791c5f1b69feb418377.js",
+  "service-worker.js": "@yield('content-viewer-url')/service-worker.js",
+  "static/css/main.2dc4b766.chunk.css.map": "@yield('content-viewer-url')/static/css/main.2dc4b766.chunk.css.map"
+}

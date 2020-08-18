@@ -1,0 +1,89 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="c" content="%7B%22c%22%3A%7B%22a%22%3A%22content%2Fassets%2F%22%2C%22s%22%3A%22content%2Fsnapshots%2F%22%2C%22f%22%3A%7B%22gameInteractives%22%3Atrue%2C%22infographicInteractives%22%3Atrue%2C%22sequentialNavigation%22%3Atrue%2C%22iseazyFonts%22%3Atrue%2C%22noIseazyLogo%22%3Atrue%2C%22customProjectLogo%22%3Atrue%2C%22corporateFonts%22%3Atrue%2C%22noAds%22%3Atrue%7D%7D%2C%22p%22%3A%22SCORM2004%22%2C%22s%22%3A%2207812b851aea6d989fbf9b3ac82fca1e%22%7D"><title>New Course Example </title><link rel="shortcut icon" href="./favicon.ico"><style></style><script>/* iFrame workaround for iOS */
+
+      if (window.self !== window.top)
+      {
+        window.document.documentElement.setAttribute('style', "overflow: auto; -webkit-overflow-scrolling: touch;");
+      }
+
+      /* Fonts Loading  */
+
+      let sheet = document.styleSheets[0];
+
+      function addFontFace(params)
+      {
+        // We can't use destructuring in params properties in IE11
+        if (!params)
+          return null;
+
+        var fontWeight = params.fontWeight;
+        var fontStyle = params.fontStyle;
+        var url = params.url;
+        var isTitle = params.isTitle;
+
+        var fontFamily = isTitle ? "'cuaternary'" : "'secondary'";
+
+        sheet.insertRule("@font-face {font-family: " + fontFamily + "; font-style: " + fontStyle + ";font-weight: " + fontWeight + "; src:url(" + url + ") format('truetype');}", 0);
+      }
+
+      if (parent && parent.builderPreviewAPI && parent.builderPreviewAPI.applySelectedFontToPreview)
+      { // For preview in builder
+        parent.builderPreviewAPI.applySelectedFontToPreview({
+          insertRuleFunction: sheet.insertRule.bind(sheet),
+          isTitle: true,
+        });
+        parent.builderPreviewAPI.applySelectedFontToPreview({
+          insertRuleFunction: sheet.insertRule.bind(sheet),
+          isTitle: false,
+        });
+      } else
+      {
+        addFontFace({
+          fontWeight: 'normal',
+          fontStyle: 'normal',
+          url: "content/assets/4c8b5a83a2f98c4fc18f3a4ea0516341.woff",
+          isTitle: true
+        });
+        addFontFace({
+          fontWeight: 'bold',
+          fontStyle: 'normal',
+          url: "content/assets/d0da8325aa269a6ed03d267c84bccc53.woff",
+          isTitle: true
+        });
+        addFontFace({
+          fontWeight: 'normal',
+          fontStyle: 'italic',
+          url: "content/assets/4c036b5a073e9ea7a042101c823c3856.woff",
+          isTitle: true
+        });
+        addFontFace({
+          fontWeight: 'bold',
+          fontStyle: 'italic',
+          url: "content/assets/da6103fe10dad2bd25d8fbb111db0869.woff",
+          isTitle: true
+        });
+        addFontFace({
+          fontWeight: 'normal',
+          fontStyle: 'normal',
+          url: "content/assets/4c8b5a83a2f98c4fc18f3a4ea0516341.woff",
+          isTitle: false
+        });
+        addFontFace({
+          fontWeight: 'bold',
+          fontStyle: 'normal',
+          url: "content/assets/d0da8325aa269a6ed03d267c84bccc53.woff",
+          isTitle: false
+        });
+        addFontFace({
+          fontWeight: 'normal',
+          fontStyle: 'italic',
+          url: "content/assets/4c036b5a073e9ea7a042101c823c3856.woff",
+          isTitle: false
+        });
+        addFontFace({
+          fontWeight: 'bold',
+          fontStyle: 'italic',
+          url: "content/assets/da6103fe10dad2bd25d8fbb111db0869.woff",
+          isTitle: false
+        });
+
+      }</script><link href="./static/css/main.2dc4b766.chunk.css" rel="stylesheet"></head><body><div class="root" id="root"></div><link rel="prefetch" href="content/snapshots/s.json"><script>!function(f){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],i=0,l=[];i<n.length;i++)t=n[i],c[t]&&l.push(c[t][0]),c[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(f[r]=o[r]);for(s&&s(e);l.length;)l.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,r=0;r<p.length;r++){for(var t=p[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==c[u]&&(n=!1)}n&&(p.splice(r--,1),e=i(i.s=t[0]))}return e}var t={},c={1:0},p=[];function i(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return f[e].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.m=f,i.c=t,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(r,e){if(1&e&&(r=i(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)i.d(t,n,function(e){return r[e]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="./";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="./static/js/2.2f9c994e.chunk.js"></script><script src="./static/js/main.fbb67a98.chunk.js"></script></body></html>
